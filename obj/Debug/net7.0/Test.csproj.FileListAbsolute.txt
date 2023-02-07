@@ -1,0 +1,15 @@
+/home/keerah8/Vscode/Test/bin/Debug/net7.0/Test
+/home/keerah8/Vscode/Test/bin/Debug/net7.0/Test.deps.json
+/home/keerah8/Vscode/Test/bin/Debug/net7.0/Test.runtimeconfig.json
+/home/keerah8/Vscode/Test/bin/Debug/net7.0/Test.dll
+/home/keerah8/Vscode/Test/bin/Debug/net7.0/Test.pdb
+/home/keerah8/Vscode/Test/obj/Debug/net7.0/Test.csproj.AssemblyReference.cache
+/home/keerah8/Vscode/Test/obj/Debug/net7.0/Test.GeneratedMSBuildEditorConfig.editorconfig
+/home/keerah8/Vscode/Test/obj/Debug/net7.0/Test.AssemblyInfoInputs.cache
+/home/keerah8/Vscode/Test/obj/Debug/net7.0/Test.AssemblyInfo.cs
+/home/keerah8/Vscode/Test/obj/Debug/net7.0/Test.csproj.CoreCompileInputs.cache
+/home/keerah8/Vscode/Test/obj/Debug/net7.0/Test.dll
+/home/keerah8/Vscode/Test/obj/Debug/net7.0/refint/Test.dll
+/home/keerah8/Vscode/Test/obj/Debug/net7.0/Test.pdb
+/home/keerah8/Vscode/Test/obj/Debug/net7.0/Test.genruntimeconfig.cache
+/home/keerah8/Vscode/Test/obj/Debug/net7.0/ref/Test.dll
