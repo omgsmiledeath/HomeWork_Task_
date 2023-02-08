@@ -11,7 +11,7 @@ internal class Program
         for (int i = 0; i <= 20; i++)
         {
             cwr.SetMessage(Guid.NewGuid().ToString());
-            cwr.setColor(ConsoleColor.Red);
+            cwr.setColor((ConsoleColor)(new Random(DateTime.Now.Microsecond).Next(1,13)));
 
         }
 
@@ -19,6 +19,6 @@ internal class Program
         Console.WriteLine("Start ConsoleWriter.Start()");
         cwr.Start();
         Console.WriteLine("END MAIN");
-        Thread.Sleep(10000);
+        
     }
 }

@@ -8,20 +8,20 @@ namespace Test
     public class ConsoleWriter
     {
         int threadCount;
-        List<string> messageBook;
+        Queue<string> messageBook;
         object _obj;
         Queue<ConsoleColor> qc;
         public ConsoleWriter(int threadCount)
         {
             this.threadCount = threadCount;
-            messageBook = new List<string>();
+            messageBook = new Queue<string>();
             qc = new Queue<ConsoleColor>();
             _obj = new object();
         }
 
         public void SetMessage(string mess)
         {
-            messageBook.Add(mess);
+            messageBook.Enqueue(mess);
         }
         public void setColor(ConsoleColor cc)
         {
@@ -34,21 +34,24 @@ namespace Test
                 int sleep = new Random(DateTime.Now.Millisecond).Next(1000, 3000);
                 Console.WriteLine($"Start Write Method,Sleep from {sleep} milisecond");
                 Thread.Sleep(sleep);
-                string mess = messageBook[new Random().Next(0, messageBook.Count)];
+                string mess = messageBook.Dequeue();
                 
-                   // Console.ForegroundColor = qc.Dequeue();
+                    Console.ForegroundColor = qc.Dequeue();
                     
                     Console.WriteLine($"{mess} in {Thread.CurrentThread.ManagedThreadId} thread");
-                   // Console.ForegroundColor = ConsoleColor.White;
+                    Console.ForegroundColor = ConsoleColor.White;
                 Thread.Sleep(sleep);
                 Console.WriteLine($"End Write Method {mess}");
             }
             );
         }
-        public void Start()
+        public async Task Start()
         {
+            await Task.Run(()=> 
+            {
             for (int i = 0; i < threadCount; i++)
                 Write();
+            });
         }
     }
 }
