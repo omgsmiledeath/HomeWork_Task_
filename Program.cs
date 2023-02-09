@@ -4,7 +4,7 @@ using Test;
 
 internal class Program
 {
-    private static void Main(string[] args)
+    async static Task Main(string[] args)
     {
         Console.WriteLine("Start Main");
         var cwr = new ConsoleWriter(20);
@@ -17,7 +17,9 @@ internal class Program
 
         Console.WriteLine("End fiil messageBook");
         Console.WriteLine("Start ConsoleWriter.Start()");
-        cwr.Start();
+        
+         await cwr.Start();
+        
         Console.WriteLine("END MAIN");
         
     }

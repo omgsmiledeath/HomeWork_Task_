@@ -27,9 +27,9 @@ namespace Test
         {
             qc.Enqueue(cc);
         }
-        private void Write()
+        private async Task Write()
         {
-            Task.Run(() =>
+            var t = Task.Run(() =>
             {
                 int sleep = new Random(DateTime.Now.Millisecond).Next(1000, 3000);
                 Console.WriteLine($"Start Write Method,Sleep from {sleep} milisecond");
@@ -44,14 +44,17 @@ namespace Test
                 Console.WriteLine($"End Write Method {mess}");
             }
             );
+            
         }
         public async Task Start()
         {
-            await Task.Run(()=> 
+            Task.Run(async ()=> 
             {
             for (int i = 0; i < threadCount; i++)
-                Write();
+               Task.Run(()=> Write());
+               await 
             });
+
         }
     }
 }
