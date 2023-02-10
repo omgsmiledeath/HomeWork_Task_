@@ -27,7 +27,7 @@ namespace Test
         {
             qc.Enqueue(cc);
         }
-        private async Task Write()
+        private void Write()
         {
             var t = Task.Run(() =>
             {
@@ -46,13 +46,13 @@ namespace Test
             );
             
         }
-        public async Task Start()
+        public void Start()
         {
-            Task.Run(async ()=> 
+            Task.Run(()=> 
             {
             for (int i = 0; i < threadCount; i++)
-               Task.Run(()=> Write());
-               await 
+                Write();
+               
             });
 
         }
