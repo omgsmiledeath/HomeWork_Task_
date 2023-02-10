@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/keerah8/Vscode/Test/Test.csproj": {}
+    "/Users/kseniabelaevskaa/Projects/Test/Test.csproj": {}
   },
   "projects": {
-    "/home/keerah8/Vscode/Test/Test.csproj": {
+    "/Users/kseniabelaevskaa/Projects/Test/Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/keerah8/Vscode/Test/Test.csproj",
+        "projectUniqueName": "/Users/kseniabelaevskaa/Projects/Test/Test.csproj",
         "projectName": "Test",
-        "projectPath": "/home/keerah8/Vscode/Test/Test.csproj",
-        "packagesPath": "/home/keerah8/.nuget/packages/",
-        "outputPath": "/home/keerah8/Vscode/Test/obj/",
+        "projectPath": "/Users/kseniabelaevskaa/Projects/Test/Test.csproj",
+        "packagesPath": "/Users/kseniabelaevskaa/.nuget/packages/",
+        "outputPath": "/Users/kseniabelaevskaa/Projects/Test/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/keerah8/.nuget/NuGet/NuGet.Config"
+          "/Users/kseniabelaevskaa/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -48,18 +48,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.2, 7.0.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

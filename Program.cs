@@ -8,7 +8,7 @@ internal class Program
     {
         Console.WriteLine($"Начало Main {Thread.CurrentThread.ManagedThreadId}");
         var cwr = new ConsoleWriter(200);
-
+       
         for (int i = 0; i <= 200; i++)
         {
             cwr.SetMessage(Guid.NewGuid().ToString());
@@ -20,7 +20,7 @@ internal class Program
         Console.WriteLine("Сгенерировали все данные для вывода");
         Console.WriteLine("Запускаем ConsoleWriter.Start()");
         
-        await cwr.Start();
+        await cwr.StartAsync();
         
         Console.WriteLine("Конец MAIN");
         
