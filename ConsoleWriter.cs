@@ -9,13 +9,14 @@ namespace Test
     {
         int threadCount;
         Queue<string> messageBook;
-       
+        private object _dumb ;
         Queue<ConsoleColor> qc;
         public ConsoleWriter(int threadCount)
         {
             this.threadCount = threadCount;
             messageBook = new Queue<string>();
             qc = new Queue<ConsoleColor>();
+            _dumb = new Object();
         }
 
         public void SetMessage(string mess)
@@ -34,10 +35,13 @@ namespace Test
                 Thread.Sleep(sleep);
                 string mess = messageBook.Dequeue();
                 
+                    lock (_dumb) 
+                    {
                     Console.ForegroundColor = qc.Dequeue();
                     
                     Console.WriteLine($"{mess} В {Thread.CurrentThread.ManagedThreadId} thread");
-                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.ResetColor();
+                    }
                 Thread.Sleep(sleep);
                 Console.WriteLine($"Конец Write() мое сообщение {mess}");
             
