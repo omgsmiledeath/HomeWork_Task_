@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kseniabelaevskaa/Projects/VSCODE/TEST/Test/Test.csproj": {}
+    "/home/keerah8/Vscode/Test/Test.csproj": {}
   },
   "projects": {
-    "/Users/kseniabelaevskaa/Projects/VSCODE/TEST/Test/Test.csproj": {
+    "/home/keerah8/Vscode/Test/Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kseniabelaevskaa/Projects/VSCODE/TEST/Test/Test.csproj",
+        "projectUniqueName": "/home/keerah8/Vscode/Test/Test.csproj",
         "projectName": "Test",
-        "projectPath": "/Users/kseniabelaevskaa/Projects/VSCODE/TEST/Test/Test.csproj",
-        "packagesPath": "/Users/kseniabelaevskaa/.nuget/packages/",
-        "outputPath": "/Users/kseniabelaevskaa/Projects/VSCODE/TEST/Test/obj/",
+        "projectPath": "/home/keerah8/Vscode/Test/Test.csproj",
+        "packagesPath": "/home/keerah8/.nuget/packages/",
+        "outputPath": "/home/keerah8/Vscode/Test/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/kseniabelaevskaa/.nuget/NuGet/NuGet.Config"
+          "/home/keerah8/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -48,12 +48,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.2, 7.0.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
         }
       }
     }

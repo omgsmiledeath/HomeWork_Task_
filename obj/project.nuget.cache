@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2vuygx2xJ5dPQamjHE9qQHUyYu62xgSXTCMfzhwFUmfEITxr4S48OqNWp2xzwbSgfrGYY6SvtIZ54NL6nMDkcg==",
+  "dgSpecHash": "XH4HOq7IBkNIm5iOmm+0nOopMvraYLXBbzc7zHcfdJC7+x9J57KjKNR5eOPYO9j5JEXhwkdaj9VfEd5Y85yAJg==",
   "success": true,
-  "projectFilePath": "/Users/kseniabelaevskaa/Projects/VSCODE/TEST/Test/Test.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/keerah8/Vscode/Test/Test.csproj",
+  "expectedPackageFiles": [
+    "/home/keerah8/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.2/microsoft.aspnetcore.app.ref.7.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

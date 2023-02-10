@@ -30,16 +30,16 @@ namespace Test
         {
             
                 int sleep = new Random(DateTime.Now.Millisecond).Next(1000, 3000);
-                Console.WriteLine($"Start Write Method,Sleep from {sleep} milisecond");
+                Console.WriteLine($"Метод Write() , спит на  {sleep} милисекунд");
                 Thread.Sleep(sleep);
                 string mess = messageBook.Dequeue();
                 
                     Console.ForegroundColor = qc.Dequeue();
                     
-                    Console.WriteLine($"{mess} in {Thread.CurrentThread.ManagedThreadId} thread");
+                    Console.WriteLine($"{mess} В {Thread.CurrentThread.ManagedThreadId} thread");
                     Console.ForegroundColor = ConsoleColor.White;
                 Thread.Sleep(sleep);
-                Console.WriteLine($"End Write Method {mess}");
+                Console.WriteLine($"Конец Write() мое сообщение {mess}");
             
             
             
@@ -49,11 +49,11 @@ namespace Test
             var tasks = new Task[threadCount];
             await Task.Run(async ()=> 
             {
-                System.Console.WriteLine("Start() begin");
+                System.Console.WriteLine("Start() Начало");
             for (int i = 0; i < threadCount; i++)
                 tasks[i]=Task.Run( ()=> Write());
                 Task.WaitAll(tasks);
-                System.Console.WriteLine("Start() end");
+                System.Console.WriteLine("Start() Конец");
                
             });
 

@@ -6,7 +6,7 @@ internal class Program
 {
     static async Task Main(string[] args)
     {
-        Console.WriteLine("Start Main");
+        Console.WriteLine($"Начало Main {Thread.CurrentThread.ManagedThreadId}");
         var cwr = new ConsoleWriter(200);
 
         for (int i = 0; i <= 200; i++)
@@ -17,12 +17,12 @@ internal class Program
 
         }
 
-        Console.WriteLine("End fill messageBook");
-        Console.WriteLine("Start ConsoleWriter.Start()");
+        Console.WriteLine("Сгенерировали все данные для вывода");
+        Console.WriteLine("Запускаем ConsoleWriter.Start()");
         
         await cwr.Start();
         
-        Console.WriteLine("END MAIN");
+        Console.WriteLine("Конец MAIN");
         
     }
 }
