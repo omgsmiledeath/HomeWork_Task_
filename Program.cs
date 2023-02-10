@@ -4,21 +4,23 @@ using Test;
 
 internal class Program
 {
-    static void Main(string[] args)
+    static async Task Main(string[] args)
     {
         Console.WriteLine("Start Main");
-        var cwr = new ConsoleWriter(20);
-        for (int i = 0; i <= 20; i++)
+        var cwr = new ConsoleWriter(200);
+
+        for (int i = 0; i <= 200; i++)
         {
             cwr.SetMessage(Guid.NewGuid().ToString());
-            cwr.setColor((ConsoleColor)(new Random(DateTime.Now.Microsecond).Next(1,13)));
+            var color = ((ConsoleColor)(new Random(DateTime.Now.Microsecond).Next(1,13)));
+            cwr.setColor(color);
 
         }
 
-        Console.WriteLine("End fiil messageBook");
+        Console.WriteLine("End fill messageBook");
         Console.WriteLine("Start ConsoleWriter.Start()");
         
-         cwr.Start();
+        await cwr.Start();
         
         Console.WriteLine("END MAIN");
         
